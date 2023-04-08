@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.presentacion_codenotch{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.barra_navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+.texto_navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logo_navegacion{
+    display: flex;
+    width: 15%;
+    height: 30%;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 7%;
+    padding-top: 5%;
+    height: 100%;
+    background-image: url("imagenes/fondo_welcome.png");
+}
+
+.texto_welcome{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.texto_inicial{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.convertimos{
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    color: rgb(118, 247, 182);
+    
+}
+
+.moreThanLearn{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 10%;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.become{
+    color: rgb(29, 230, 179);
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 10%;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.barra_convocatoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: black;
+}
+
+.abrimos_convocatoria{
+    width: 90%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 8px;
+
+}
+
+
+.why_codenotch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+    background-image: url(imagenes/imagen_fondo.png);
+    background-repeat: no-repeat;
+}
+
+.comparte_mensaje{
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+
+.encontrar_trabajo{
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.empresas{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.texto_empresas{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    height: 30%;
+    padding-top: 30px;
+}
+
+.logos_empresas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 70%;
+    margin-left: 4%;
+}
+
+.apoyo_profesional{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150vh;
+    background-color: black;
+    gap: 10px;
+}
+
+.texto_apoyoProfesional{
+    height: 12%;
+    width: 80%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+
+.texto_apoyoProfesional-tittle{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.texto_apoyoProfesional-small{
+    font-size: 23px;
+}
+
+.boton_saberMas{
+    margin-top: 20px;
+    height: 8%;
+    width: 15%;
+    color: white;
+    background-color: blue;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.cajas_apoyoProfesional{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 80%;
+    height: 45%;
+}
+
+.subcajas_apoyoProfesional{
+    padding: 20px;
+    height: 100%;
+    width: 30%;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.subcajas_apoyoProfesional-tittle{
+    font-size: 34px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cifras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150vh;
+    padding-top: 20px;
+    background-color: black;
+}
+
+.titulo_cifras{
+    height: 20%;
+    width: 90%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.contenido_cifras{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 90%;
+}
+
+.texto_contenido_cifras{
+    color:white;
+    font-size: 30px;
+}
+
+.imagen_datos{
+    width: 400px;
+    height: 233px;
+    align-self: end;
+}
+
+.cifras_datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 20%;
+    margin-top: 5%;
+}
+
+.cifras_datos-numeros{
+    width: 33%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.tamanyo_numero{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.formulario_contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 120vh;
+}
+
+.margen_barra_navegacion{
+    padding-top: 10%;
+    height: 140vh;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.imagen_formulario{
+    width: 30%;
+    height: 90%;
+    align-self: center;
+}
+
+.texto_formulario-titulo{
+    margin-top: 20px;
+    height: 15%;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 8%;
+}
+
+.texto_formulario{
+    height: 10%;
+    font-size: 25px;
+    padding-left: 8%;
+}
+
+.form{
+    padding-top: 5%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    font-size: 20px;
+    width: 70%;
+    height: 10%;
+    padding-left: 2%;
+    margin-left: 8%;
+}
+
+.privacidad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.check {
+    width:20px;
+    height:20px;
+    margin-right: 3px;
+}
+
+.boton_llamada{
+    margin-top: 50px;
+    margin-left: 8%;
+    height: 10%;
+    width: 32%;
+    color: white;
+    background-color: blue;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 120vh;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logos_rrss{
+    display: flex;
+    gap: 15px;
+}
+
+.boton_saberMas-negro{
+    background-color: black;
+    margin-left: 10%;
+}
+
+.cursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    height: 140vh;
+}
+
+.imagen_cursos{
+    width: 48%;
+    height: 50%;
+    padding: 3%;
+}
+
+.caracteristicas_cursos{
+    width: 48%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 5%;
+}
+
+.caracteristicas{
+    border: 1px solid rgb(204, 204, 204);
+    height: 12%;
+    width: 90%;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.titulo_cursos{
+    background-color: black;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    height: 20vh;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.contenido_cursos{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 90vh;
+    padding: 5%;
+    gap: 30px
+}
+
+.imagen_contenido_cursos{
+    display: flex;
+    height: 40%;
+    width: 40%;
+    align-self: center;
+}
+
+.razones_bootcamp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: blue;
+    gap: 10px;
+    padding-top: 5%;
+}
+
+.subcajas_razones_bootcamp{
+    padding: 20px;
+    height: 100%;
+    width: 30%;
+    color: white;
+    font-size: 20px;
+}
+
+.opniones{
+    font-size: 25px;
+    text-align: justify;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.nuestros_profes{
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    height: 40vh;
+    padding-top: 12%;
+    padding-left: 8%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.equipo_docente{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    height: 200vh;
+}
+
+.texto_profes{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.nombre_profes{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.empieza_bootcamp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50vh;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    gap: 40px;
+}
+
+.equipo_talent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    height: 200vh;
+}
+
+.profes_talent{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 90%;
+    padding-top: 5%;
+}
+
+.fotos_talent{
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.texto_profes_talent{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    padding-top: 10%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.datos_contacto{
+    display: flex;
+    flex-direction: column;
+}

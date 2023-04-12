@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travellesp</title>
+    <title>TravelEs</title>
     <link rel="stylesheet" href="agencia_viajes.css">
 </head>
 <body>
@@ -118,32 +118,31 @@
             <button class="boton_destino">MÁS RURAL</button>
         </div>
     </div>
-    <div class="formulario">
-        <img class="mapa_formulario" src="imagenes/mapa_spain.png" alt="">
+    <form action="" class="formulario">
         <div class="contenido_formulario">
             <h1>¿Sabes cual será tu próximo destino?</h1>
             <div class="campos_formulario">
-                <div class="borde_campos_form"><input type="text" value="Nombre completo*"></div>
-                <div class="borde_campos_form"><input type="text" value="Origen*"></div>
-                <div class="borde_campos_form"><input type="text" value="Destino*"></div>
-                <div class="borde_campos_form"><input type="text" value="Nº Persnas*"></div>
-                <div class="borde_campos_form"><input type="text" value="Correo electrónico*"></div>
-                <label class="texto_fecha"> Fecha de Entrada:</label>
-                <div class="borde_campos_form"><input type="date" value="Fecha de entrada*"></div>
-                <label class="texto_fecha"> Fecha de Salida:</label>
-                <div class="borde_campos_form"><input type="date" value="Salida*"></div>
+                <div class="borde_campos_form"><input type="text" id="name" placeholder="Nombre completo*"></div>
+                <div class="borde_campos_form"><input type="text" id="origin" placeholder="Origen*"></div>
+                <div class="borde_campos_form"><input type="text" id="destiny" placeholder="Destino*"></div>
+                <div class="borde_campos_form"><input type="text" id="n_people" placeholder="Nº Personas*"></div>
+                <div class="borde_campos_form"><input type="date" id="checkin" placeholder="Fecha*"></div>
             </div>
             <div class="botones_formulario">
-                <button class="boton_destino">MÁS INFORMACIÓN</button>
-                <button class="boton_destino">FILTRAR</button>
+                <button class="boton_destino" onclick="saveInfo()" id="boton_info" type="reset">MÁS INFORMACIÓN</button>
+                <button class="boton_destino" onclick="filtrarDestino()" id="boton_filtrar" type="reset">FILTRAR</button>
             </div>
         </div>
-    </div>
+        <aside class="aside aside2">
+            <table class="table" id="solicitud_destino"></table>
+        </aside>
+    </form>
     <footer class="footer">
         <span class="nombre_agencia">TravelEs</span>
         <div class="iconos_rrss">
             <img src="imagenes/iconos_rrss.png" alt="">
         </div>
     </footer>
+    <script src="./agencia_viajes.js"></script>
 </body>
 </html>

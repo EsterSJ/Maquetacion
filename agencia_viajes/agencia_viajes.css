@@ -260,17 +260,6 @@ input{
     border-bottom: 2px solid #c3a98b;
 }
 
-/* .aside{
-    display: flex;
-} */
-
-.table{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-}
-
 .aside{
     display: flex;
     width: 40%;
@@ -287,9 +276,15 @@ input{
     width: 500px;
     background-color:#ece2c6;
     justify-content: space-evenly;
-    border: 2px solid black;
+    border: 2px solid #c3a98b;
     border-radius: 5px;
     padding: 10px;
+    margin-right: 10%;
+}
+
+.encabezado_tabla{
+    background-color: #c3a98b;
+    font-size: 20px;
 }
 
 .footer{

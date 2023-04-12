@@ -25,7 +25,7 @@ function filtrarDestino(){
     }
 
     tabla.innerHTML = `
-                    <tr>
+                    <tr class="encabezado_tabla">
                         <th>Nombre</th>
                         <th>Origen</th>
                         <th>Destino</th>

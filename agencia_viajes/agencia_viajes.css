@@ -164,7 +164,6 @@ h1{
 .isla{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid black; */
     height: 45%;
     width: 30%;
 }
@@ -219,7 +218,6 @@ img:hover{
 .formulario{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     background-color: #ece2c6;
     height: 90vh;
 }

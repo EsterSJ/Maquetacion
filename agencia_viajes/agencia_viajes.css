@@ -103,8 +103,8 @@ h1{
 .destino{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 100vh;
+    width: 400px;
+    height: 600px;
 }
 
 .imagen_destino{

@@ -195,10 +195,11 @@
     </div>
     <div class="contacto" id="contacto">
         <span class="sobre_miTitulo">CONTACTO</span>
-        <form action="mailto:ester_s@hotmail.com" method="post" class="formulario">
-            <input type="text" class="input_form" placeholder="Tu email">
-            <input type="text" class="input_form" placeholder="Asunto">
-            <textarea placeholder="Tu mensaje aquí" class="textarea_form"></textarea>
+        <form action='index.php' method='POST' class="formulario">
+            <input type="text" class="input_form" placeholder="Tu nombre" name="nombre" id="nombre">
+            <input type="text" class="input_form" placeholder="Tu email" name="mail" id="mail">
+            <input type="text" class="input_form" placeholder="Asunto" name="asunto" id="asunto">
+            <textarea placeholder="Tu mensaje aquí" class="textarea_form" name="mensaje" id="mensaje"></textarea>
             <div class="botones">
                 <button type="submit" class="boton">ENVIAR</button>
                 <button type="reset" class="boton">LIMPIAR</button>

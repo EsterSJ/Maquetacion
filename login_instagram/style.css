@@ -1,0 +1,250 @@
+/* fuente logo Instagram */
+@font-face {
+    font-family: 'FontFree-Net-Billabong';
+    src: url(fonts/FontsFree-Net-Billabong.ttf);
+}
+
+/* variables */
+:root{
+    --colorBorde: rgb(219,219,219);
+    --colorInputs: rgb(115,115,115);
+    --colorFondoInputs: rgb(248, 248, 248);
+    --colorBotonEntrar: #4cb5f9;
+}
+
+/* limpiadores */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.contenido_login{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.imagen_login{
+    display: flex;
+}
+
+.formulario_login{
+    display: flex;
+    flex-direction: column;
+    width: 318px;
+    margin-top: 20px;
+}
+
+.inicio_sesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+    width: 310px;
+    border: 1px solid var(--colorBorde);
+}
+    .nombre_IG{
+        font-family: 'FontFree-Net-Billabong';
+        height: 100px;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .campos_form{
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+    }
+
+        .inputs{
+            border: 1px solid var(--colorBorde);
+            border-radius: 2px;
+            width: 260px;
+            height: 35px;
+            margin-bottom: 5px;
+            color: black;
+            background-color: var(--colorFondoInputs);
+        }
+
+        input::placeholder{
+            font-size: 12px;
+            padding-left: 6px;
+            color: var(--colorInputs);
+        }
+
+        .boton_entrar{
+            border: none;
+            border-radius: 8px;
+            color: white;
+            background-color: var(--colorBotonEntrar);
+            width: 260px;
+            height: 35px;
+        }
+
+        .linea_separatoria{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 260px;
+            height: 25px;
+            color: var(--colorInputs);
+            margin-top: 5px;
+        }
+
+        .linea{
+            background-color: var(--colorBorde);
+            height: 1px;
+            width: 105px;
+        }
+
+        .circulo{
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+
+        .facebook{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 30px;
+            width: 220px;
+        }
+
+        .logo_facebook{
+            align-self: center;
+            height: 16px;
+            width: 16px;
+            margin-right: 10px;
+        }
+
+        .frase_facebook{
+            align-self: center;
+            font-size: 12px;
+            color: #31497c;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .recuperar_contrasenya{
+            align-self: center;
+            margin-top: 8px;
+            font-size: 11px;
+            color: var(--colorInputs);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+.registro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    height: 50px;
+    width: 310px;
+    border: 1px solid var(--colorBorde);
+}
+
+    .nueva_cuenta{
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .a_registro{
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        margin-left: 5px;
+        color: var(--colorBotonEntrar);
+    }
+
+.descargar_aplicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    height: 100px;
+    width: 310px;
+}
+
+    .span_descargar{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .logos_descarga{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .imagen_descargar{
+        height: 40px;
+        width: 110px;
+    }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.a_footer{
+    color: var(--colorInputs);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.derechos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+/* media querys */
+@media screen and (max-width: 875px) {
+    .imagen_login{
+        display: none;
+    }
+
+    .contenido_login{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .inicio_sesion{
+        border: none;
+    }
+
+    .registro{
+        border: none;
+    }
+}

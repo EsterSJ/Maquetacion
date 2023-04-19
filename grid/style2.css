@@ -1,0 +1,25 @@
+/* limpiadores */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: x-large;
+    text-align: center;
+}
+
+.gridContainer{
+    display: grid;
+    height: 520px;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    margin: 50px;
+}
+
+.a{
+    background-color: greenyellow;
+}
+
+.b{
+    background-color: black;
+    color: white;
+}

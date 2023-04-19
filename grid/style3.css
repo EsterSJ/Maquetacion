@@ -1,0 +1,129 @@
+/* limpiadores */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+}
+
+.gridContainer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [x0]1fr [x1]1fr [x2]1fr [x3]1fr  [x4] ;
+    grid-template-rows: [y0]1fr [y1]10fr [y2]1fr [y3];
+}
+
+.header{
+    grid-column: x0/x4;
+    grid-row: y0/y1;
+    background-color: black;
+    padding-top: 12px;
+}
+
+.menu{
+    grid-column: x3/x4;
+    grid-row: y1/y2;
+    background-color: #00d29f;
+    padding: 12px;
+
+    display: grid;
+    grid-template-columns: [xm0]1fr [xm1];
+    grid-template-rows: [ym0]1fr [ym1]1fr [ym2]1fr [ym3]1fr [ym4];
+}
+
+.caja_menu{
+    border: 2px solid black;
+    grid-column: xm0/xm1;
+    grid-row: ym0/ym1;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+.menu1{
+    grid-row: ym1/ym2;
+    background-color: black;
+    margin-top: 4px;
+    padding-top: 12px;
+}
+
+.menu2{
+    grid-row: ym2/ym3;
+    background-color: black;
+    margin-top: 4px;
+    padding-top: 12px;
+}
+
+.menu3{
+    grid-row: ym3/ym4;
+    background-color: black;
+    margin-top: 4px;
+    padding-top: 12px;
+}
+
+.contenido{
+    grid-column: x0/x3;
+    grid-row: y1/y2;
+    background-color: blue;
+    padding: 12px;
+
+    display: grid;
+    grid-template-columns: [xc0]2fr [xc1]1fr [xc2];
+    grid-template-rows: [yc0]1fr [yc1]2fr [yc2];
+}
+
+.header_contenido{
+    grid-column: xc0/xc2;
+    grid-row: yc0/yc1;
+    border: 2px solid white;
+    padding-left: 8px;
+    padding-top: 8px;
+    text-align: start;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.texto1{
+    grid-column: xc0/xc1;
+    grid-row: yc1/yc2;
+    border: 2px solid white;
+    padding-left: 8px;
+    padding-top: 8px;
+    text-align: start;
+    margin-right: 4px;
+}
+
+.texto2{
+    grid-column: xc1/xc2;
+    grid-row: yc1/yc2;
+    border: 2px solid white;
+    padding-left: 8px;
+    padding-top: 8px;
+    text-align: start;
+}
+
+.footer{
+    grid-column: x0/x4;
+    grid-row: y2/y3;
+    background-color: purple;
+    padding: 4px;
+
+    display: grid;
+    grid-template-columns: [xf0]1fr [xf1]1fr [xf2];
+    grid-template-rows: [yf0]1fr [yf1];
+}
+
+.footer_footer{
+    grid-column: xf0/xf1;
+    border: 2px solid black;
+    margin-right: 4px;
+    padding-top: 6px;
+}
+
+.contacto{
+    grid-column: xf1/xf2;
+    border: 2px solid black;
+    padding-top: 6px;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopping online</title>
     <link rel="tab icon" href="imagenes/nash!.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
   <body>
@@ -41,12 +42,36 @@
                 </ul>
               </li>
             </ul>
-            <button class="btn btn-outline-dark bg-white" type="submit" id="carrito">CARRITO</button>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cart" id="carrito">
+              CARRITO
+            </button>
           </div>
         </div>
     </nav>
 
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Productos añadidos</h5>
+      </div>
+      <div class="modal-body" id="lista">
+        
+      </div>
+      <div class="modal-body" id="total">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">PAGAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- Contenido por cards -->
+    <div class="shop_list" id="shop_list" style="display: none;">Esto es una prueba cutre</div>
     <div class="container text-light">
         <div class="row" style="margin-top: 40px;">
           <div class="col">
@@ -56,7 +81,8 @@
                   <h5 class="card-title">Pantalón suelto gris</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <p class="card-precio"><strong>20€</strong></p>
-                  <a href="#" class="btn btn-outline-white btn-dark">Añadir al carito</a>
+                  <a href="#" class="btn btn-outline-white btn-dark producto" id="add" name="Pantalon suelto gris" value="20">Añadir al carito</a>
+                  <!-- <button class="btn btn-outline-white btn-dark producto" click="addProduct()" id="add" type="reset" value="20" name="Pantalon suelto gris">Añadir al carrito</button> -->
                 </div>
             </div>
           </div>
@@ -67,7 +93,8 @@
                   <h5 class="card-title">Vestido Túnico</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <p class="card-precio"><strong>10€</strong></p>
-                  <a href="#" class="btn btn-outline-white btn-dark">Añadir al carito</a>
+                  <a href="#" class="btn btn-outline-white btn-dark producto" id="add" name="Vestido tunico" value="10">Añadir al carito</a>
+                  <!-- <button class="btn btn-outline-white btn-dark producto" click="addProduct()" id="add" type="reset" value="10" name="Vestido tunico negro">Añadir al carrito</button> -->
                 </div>
             </div>
           </div>
@@ -78,7 +105,7 @@
                   <h5 class="card-title">Falda midi print</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <p class="card-precio"><strong>12€</strong></p>
-                  <a href="#" class="btn btn-outline-white btn-dark">Añadir al carito</a>
+                  <a href="#" class="btn btn-outline-white btn-dark producto" id="add" name="Falda midi estampado" value="12">Añadir al carito</a>
                 </div>
             </div>
           </div>
@@ -89,7 +116,7 @@
                   <h5 class="card-title">Cardigan rayas</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <p class="card-precio"><strong>20€</strong></p>
-                  <a href="#" class="btn btn-outline-white btn-dark">Añadir al carito</a>
+                  <a href="#" class="btn btn-outline-white btn-dark producto" id="add" name="Cardigan rayas" value="20">Añadir al carito</a>
                 </div>
             </div>
           </div>
@@ -103,7 +130,7 @@
                     <h5 class="card-title">Mini Falda Cebra</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p class="card-precio"><strong>8€</strong></p>
-                    <a href="#" class="btn btn-outline-white btn-dark">Añadir al carito</a>
+                    <a href="#" class="btn btn-outline-white btn-dark producto" id="add" name="Mini falda cebra" value="8">Añadir al carito</a>
                   </div>
               </div>
             </div>
@@ -114,7 +141,7 @@
                     <h5 class="card-title">Mono overol</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p class="card-precio"><strong>25€</strong></p>
-                    <a href="#" class="btn btn-outline-white btn-dark">Añadir al carito</a>
+                    <a href="#" class="btn btn-outline-white btn-dark producto" id="add" name="Mono overol" value="25">Añadir al carito</a>
                   </div>
               </div>
             </div>
@@ -125,7 +152,7 @@
                     <h5 class="card-title">Vestido punto blanco</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p class="card-precio"><strong>18€</strong></p>
-                    <a href="#" class="btn btn-outline-white btn-dark">Añadir al carito</a>
+                    <a href="#" class="btn btn-outline-white btn-dark producto" id="add" name="Vestido punto blanco" value="18">Añadir al carito</a>
                   </div>
               </div>
             </div>
@@ -136,13 +163,17 @@
                     <h5 class="card-title">Pantalón ancho</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p class="card-precio"><strong>20€</strong></p>
-                    <a href="#" class="btn btn-outline-white btn-dark">Añadir al carito</a>
+                    <a href="#" class="btn btn-outline-white btn-dark producto" id="add" name="Pantalon ancho" value="20">Añadir al carito</a>
                   </div>
               </div>
             </div>
           </div>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+    <script src="reto2.js"></script>
+</body>
 </html>

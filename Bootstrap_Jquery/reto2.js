@@ -12,7 +12,6 @@ producto.on( "click", function() {
         }
         carrito.push(productoAdd);
         totalCompra += Number(productoAdd.precio);
-        console.log("Total compra: " + totalCompra);
   });
 
   //añadir la lista de la compra al body componente modal

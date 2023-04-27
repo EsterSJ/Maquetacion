@@ -202,11 +202,11 @@ function saveInfo(){
     }
     array_peliculas_favoritas.push(new_movie);
 }
-
+let j=0;
 function motrarPeliculasFavoritas(){
     let peliculas_favoritas = document.getElementById("peliculas_favoritas");
 
-    for (let j=0; j<array_peliculas_favoritas.length; j++){
+    for (j; j<array_peliculas_favoritas.length; j++){
         peliculas_favoritas.innerHTML += `
                                         <div style="padding-bottom:30px;">
                                             <div class="card" style="width: 18rem;">
@@ -250,4 +250,5 @@ function motrarPeliculasFavoritas(){
                                         </div>
                                         </div>`;
     }
+    j=array_peliculas_favoritas.length;
 }

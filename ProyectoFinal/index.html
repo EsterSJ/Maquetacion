@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icono_imdb.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/imdb_navbar.png" alt="" width="120" height="44"></a>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active text-light" aria-current="page" href="#formulario" style="font-weight: bold;" onclick="mostrarPeliculas(); mostrarFormulario()">PELÍCULAS</a></li>
+                    <li class="nav-item"><a class="nav-link active text-light" href="#profesionales" style="font-weight: bold;" onclick="mostrarProfesionales()">ACTORES & DIRECTORES</a></li>
+                </ul>
+                <button class="btn btn-outline-white bg-light" type="submit">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portada -->
+    <div><img class="ajuste_tamanyo" src="img/portada_peliculas.png" alt=""></div>
+
+    <!-- Seccion de profesionales -->
+    <div class="profesionales ocultar_profesionales bg-dark" id="profesionales"></div>
+    <div class="ajuste_row bg-dark" id="escaparate_profesionales"></div>
+  
+    <!-- Formulario para añadir peliculas -->
+    <div class="container_formulario bg-dark" id="formulario"></div>
+    <div class="peliculas_favoritas bg-dark" id="peliculas_favoritas"></div>
+    
+    <!-- Seccion de peliculas -->
+    <div class="bg-warning ocultar_peliculas peliculas" id="peliculas"></div>
+    <div id="carouselExampleCaptions" class="carousel slide bg-warning carrusel" data-bs-ride="carousel"></div>
+    
+    <!-- Footer -->
+    <nav class="nav nav-pills flex-column flex-sm-row footer">
+        <a class="flex-sm-fill text-sm-center nav-link text-warning" href="#">
+            <img class="iconos_rrss" src="img/600px-Instagram_icon.png" alt="">
+            Instagram
+        </a>
+        <a class="flex-sm-fill text-sm-center nav-link text-warning" href="#">
+            <img class="iconos_rrss" src="img/YouTube_icon_(2011-2013).svg.png" alt="">
+            Youtube
+        </a>
+        <a class="flex-sm-fill text-sm-center nav-link text-warning" href="#">
+            <img class="iconos_rrss" src="img/Twitter2.svg.png" alt="">
+            Twitter
+        </a>
+        <a class="flex-sm-fill text-sm-center nav-link text-warning" href="#">
+            <img class="iconos_rrss" src="img/Facebook_logo_(square).png" alt="">
+            Facebook
+        </a>
+        <a class="flex-sm-fill text-sm-center nav-link disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">Diseño y desarrollo por Ester Sánchez©</a>
+    </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script src="./profesionales.js"></script>
+    <script src="./peliculas.js"></script>
+</body>
+</html>

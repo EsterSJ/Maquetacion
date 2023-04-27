@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profesionales{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.ocultar_profesionales{
+    display: none;
+}
+
+.escaparte_profesionales{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 20px;
+}
+
+.card:hover{
+    border: 5px solid rgb(255, 238, 0);
+}
+
+.ajuste_tamanyo{
+    width: 100%;
+}
+
+.row_titulo{
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+
+.ajuste_row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 12px;
+}
+
+.foto_profesionales{
+    height: 280px;
+}
+
+.peliculas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.ocultar_peliculas{
+    display: none;
+}
+
+.img_carousel{
+    height: 500px;
+}
+
+.h1_carousel{
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+}
+
+.container_formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.ancho_inputs{
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+}
+
+.boton_form{
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(255, 208, 0);
+}
+
+.peliculas_favoritas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.iconos_rrss{
+    height: 50px;
+    width: 50px;
+}
+
+.escaparte_pelis{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: black;
+}
+
+@media screen and (max-width: 780px){
+    .iconos_rrss{
+        display: none;
+    }
+
+    .row_titulo{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .row_titulo{
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+}
